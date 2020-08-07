@@ -1,0 +1,439 @@
+/* UNIVERSAL STYLE */
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+*{
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(87, 83, 83);
+}
+@media only screen and (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .left-35 {
+        width: 35%;
+    }
+    .right-65 {
+        width: 65%;
+    }
+}
+
+
+/* HEADER */
+
+header {
+    padding: 0px 24px;
+    height: 64px;
+    }
+header li {
+    display: inline;
+  }
+.mobile-icons {
+    display: block;
+    width: 100%;
+  } 
+.mobile-icons ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  } 
+
+@media only screen and (max-width: 768px) {
+    .logo img {
+        display: none;
+    }
+    .logo span {
+        display: none;
+    }  
+    nav {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .mobile-icons {
+        display: none;
+    }
+
+    .logo {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 32px;
+   
+    }
+    .logo span {
+        font-size: 20px;
+    }
+  
+    strong {
+        font-weight: bold;
+    }  
+    .logo img {
+        margin-right: 8px;
+
+    }
+    nav a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 20px;
+    } 
+    .desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav li {
+        padding-left: 16px;
+    }
+}
+
+/* BANNER */
+
+
+.banner-content {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.banner-img {
+    width: 100%;
+}
+    
+.banner-content .text-content {
+    margin: 32px 16px;
+
+}
+.text-content h1 {
+    padding-bottom: 32px;
+    font-size: 32px;
+}
+
+.text-content p {
+    padding-bottom: 24px;
+    font-size: 25px;
+}
+
+.banner-content a {
+    padding: 8px 80px;
+    background-color: rgb(128, 122, 122);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .banner-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .left-60 {
+        width: 60%;
+    }
+    .banner-img {
+        padding: 32px 24px;
+    }
+    .right-40 {
+        width: 40%;
+        
+    }
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 50px 24px 0;
+    }
+    .banner-content a {
+        background-color: rgb(68, 65, 65);
+    }
+    
+}
+
+
+/* ARTICLES */
+
+@media only screen and (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+    .inf-section .article {
+        flex-direction: column;
+        padding-bottom: 16px;
+    } 
+    .inf-section .art-container .right-40 {
+        padding: 16px 16px 32px 16px;
+    }  
+}
+
+.inf-section {
+    display: flex;
+    
+}
+.inf-section .art-container .right-40 {
+    display: flex;
+    
+}
+.inf-section .article .text-article a {
+    color: blue;
+}
+
+.inf-section .image .mobile{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .inf-section .desk { 
+        width: 100%;
+    }   
+    .mobile {
+        display: none;
+    }
+    .inf-section .art-container {
+        justify-content: space-between;
+    }
+    
+    .inf-section { 
+        padding: 32px 0 32px 24px;
+        
+    }
+    .inf-left-60 {
+        width: 60%;
+        
+    }
+    .inf-left-60 .art-container .right-40 {
+        display: flex;
+        align-items: center;
+
+    }
+    .inf-section h3 {
+        font-size: 24px;
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+    .inf-section p {
+        font-size: 18px;
+    }  
+    .inf-section span {
+        font-size: 14px;
+    }
+    
+    .art-container .right-40 {
+        width: 40%;
+        
+        
+        }
+    .article h2 {
+        font-size: 24px;
+
+    }.article { 
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .article .desktop {
+        width: 35%;
+        padding: 16px 16px 16px 16px;
+    }
+    .text-article {
+        width: 65%;
+    }
+    .article .image .desktop {
+        width: 80%;
+        overflow: hidden;
+    }
+    #oliver {
+        background-color: rgb(219, 219, 219);
+    }
+    
+
+    
+}
+
+/* START LEARNING */
+
+#start-learning-section {
+    padding: 32px 16px;
+    background-color: rgb(245, 244, 245) ;
+    display: flex;
+    flex-direction: column;
+    
+}
+#start-learning-section ul{
+    padding: 0;
+    width: 100%;
+}
+
+#start-learning-section li {
+    text-align: left;
+    
+}
+#start-learning-section h5 {
+    font-size: 32px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-weight: bold;
+  
+}
+.cards {
+    background-color: rgb(216, 216, 216);
+}
+.text-course h3 {
+    
+    margin: 8px;
+    font-size: 20px;
+    padding: 16px;
+    padding-bottom: 24px;
+    
+} 
+#start-learning-section span {
+    font-size: 15px;
+}
+.text-course {
+    color: rgb(74, 74, 74);
+}
+
+@media only screen and (min-width: 768px) {
+    #start-learning-section {
+        padding: 32px 72px 16px 72px;
+        background-color: rgb(234, 235, 236);
+    }
+    .flex-cards ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-cards a {
+        width: 33%;
+        box-sizing: border-box;
+    }
+    .cards {
+       
+        background-color: rgb(255, 255, 255);
+        
+        box-sizing: border-box;
+    }
+    .card-image {
+        width: 100%;
+        
+    }
+    .text-course {
+        height: 140px;
+        padding: 16px;
+        
+    }
+    .text-course h3 {
+        margin: 0px;
+        
+        
+        padding: 0;
+    }
+    .text-course span {
+        
+        padding: 30px 0;
+    }
+    .left {
+        padding: 16px 16px 16px 0;
+    }
+    .center {
+        padding: 16px;
+    }
+    .right {
+        padding: 16px 0 16px 16px;
+    }
+    
+}
+
+
+
+
+
+
+/* THESIS */
+
+#thesis-section video {
+    width: 100%;
+
+  }
+#thesis-section {
+    background-color: rgb(243, 245, 245);
+    padding: 32px 0 24px 0;
+} 
+#thesis-section h2 {
+    padding-bottom: 16px;
+    text-align: center;
+} 
+@media only screen and (min-width: 768px) {
+    .flex-thesis {
+        display: flex;
+        justify-content: center;
+    }
+    .flex-thesis main {
+        padding: 32px 24px;
+    }
+    .main-text h3 {
+        padding: 24px 0 8px 0;
+    }
+    .thesis-card {
+        display: flex;
+        align-items: center;
+    }
+    .thesis-text p {
+        padding: 8px 0;
+
+    }
+    .thesis-card img {
+        padding: 16px;
+    }
+    .top {
+        background-color: rgb(216, 216, 216);
+    }
+    
+} 
+    
+
+
+  
+/* FOOTER*/
+
+footer {
+    background-color: rgb(243, 245, 245);
+    padding: 24px 16px;
+
+}
+footer a {
+    color: inherit;
+    
+}
+@media only screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgb(225, 223, 223);
+    }
+
+}
+
